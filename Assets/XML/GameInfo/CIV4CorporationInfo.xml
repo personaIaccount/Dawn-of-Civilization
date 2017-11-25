@@ -50,6 +50,7 @@
 			<iHealth>0</iHealth>
 			<PrereqBonuses>
 				<BonusType>BONUS_BANANA</BonusType>
+				<BonusType>BONUS_COCOA</BonusType>
 				<BonusType>BONUS_COFFEE</BonusType>
 				<BonusType>BONUS_SPICES</BonusType>
 				<BonusType>BONUS_SUGAR</BonusType>
@@ -84,6 +85,7 @@
 			<iHealth>0</iHealth>
 			<PrereqBonuses>
 				<BonusType>BONUS_CORN</BonusType>
+				<BonusType>BONUS_POTATO</BonusType>
 				<BonusType>BONUS_RICE</BonusType>
 				<BonusType>BONUS_WHEAT</BonusType>
 			</PrereqBonuses>

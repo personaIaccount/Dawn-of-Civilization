@@ -24,7 +24,7 @@ tCol = (
 '150,150,150',
 '128,128,128')
 
-lChineseCities = [(102, 47), (103, 44), (103, 43), (106, 44), (107, 43), (105, 39), (104, 39)]
+lChineseCities = [(128,48)]
 # Beijing, Kaifeng, Luoyang, Shanghai, Hangzhou, Guangzhou, Haojing
 
 class RFCUtils:
@@ -978,21 +978,21 @@ class RFCUtils:
 
 		lDirectionList = []
 		if iDirection == -1 or iDirection == DirectionTypes.DIRECTION_NORTH:
-			if y < 68:
+			if y < iWorldY:
 				lDirectionList.append((0, 1))
 		if iDirection == -1 or iDirection == DirectionTypes.DIRECTION_SOUTH:
 			if y > 0:
 				lDirectionList.append((0, -1))
 		if iDirection == -1 or iDirection == DirectionTypes.DIRECTION_EAST:
-			if x < 124:
+			if x < iWorldX:
 				lDirectionList.append((1, 0))
 			else:
-				lDirectionList.append((-124, 0))
+				lDirectionList.append((-iWorldX, 0))
 		if iDirection == -1 or iDirection == DirectionTypes.DIRECTION_WEST:
 			if x > 0:
 				lDirectionList.append((-1, 0))
 			else:
-				lDirectionList.append((124, 0))
+				lDirectionList.append((iWorldX, 0))
 
 		for tDirection in lDirectionList:
 			dx, dy = tDirection

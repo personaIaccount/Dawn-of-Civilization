@@ -427,7 +427,7 @@ class RiseAndFall:
 		elif utils.getScenario() == i1700AD:
 			
 			# Chengdu
-			pChengdu = gc.getMap().plot(99, 41).getPlotCity()
+			pChengdu = gc.getMap().plot(119, 49).getPlotCity()
 			pChengdu.setCulture(iChina, 100, True)
 
 	def flipStartingTerritory(self):
@@ -436,21 +436,21 @@ class RiseAndFall:
 			
 			# China
 			tTL, tBR = Areas.tBirthArea[iChina]
-			if utils.getHumanID() != iChina: tTL = (99, 39) # 4 tiles further south
+			if utils.getHumanID() != iChina: tTL = (117, 43) # 4 tiles further south
 			self.startingFlip(iChina, [(tTL, tBR)])
 			
 		if utils.getScenario() == i1700AD:
 		
 			# China (Tibet)
-			tTibetTL = (94, 42)
-			tTibetBR = (97, 45)
-			tManchuriaTL = (105, 51)
-			tManchuriaBR = (109, 55)
+			tTibetTL = (110, 47)
+			tTibetBR = (115, 52)
+			tManchuriaTL = (126, 59)
+			tManchuriaBR = (131, 65)
 			self.startingFlip(iChina, [(tTibetTL, tTibetBR), (tManchuriaTL, tManchuriaBR)])
 			
 			# Russia (Sankt Peterburg)
-			utils.convertPlotCulture(gc.getMap().plot(68, 58), iRussia, 100, True)
-			utils.convertPlotCulture(gc.getMap().plot(67, 57), iRussia, 100, True)
+			utils.convertPlotCulture(gc.getMap().plot(80, 69), iRussia, 100, True)
+			# utils.convertPlotCulture(gc.getMap().plot(67, 57), iRussia, 100, True)
 			
 			
 	def startingFlip(self, iPlayer, lRegionList):
@@ -465,14 +465,14 @@ class RiseAndFall:
 
 
 	def prepareChina(self):
-		pGuiyang = gc.getMap().plot(102, 41)
+		pGuiyang = gc.getMap().plot(122, 48)
 		pGuiyang.getPlotCity().kill()
 		pGuiyang.setImprovementType(-1)
 		pGuiyang.setRouteType(-1)
 		pGuiyang.setFeatureType(iForest, 0)
 
 		if utils.getScenario() == i600AD:
-			pXian = gc.getMap().plot(100, 44)
+			pXian = gc.getMap().plot(121, 52)
 			pXian.getPlotCity().kill()
 			pXian.setImprovementType(-1)
 			pXian.setRouteType(-1)
@@ -484,8 +484,8 @@ class RiseAndFall:
 			pBeijing.setImprovementType(-1)
 			pBeijing.setRouteType(-1)
 
-		tCultureRegionTL = (98, 37)
-		tCultureRegionBR = (109, 49)
+		tCultureRegionTL = (116, 42)
+		tCultureRegionBR = (130, 58)
 		for (x, y) in utils.getPlotList(tCultureRegionTL, tCultureRegionBR):
 			pPlot = gc.getMap().plot(x, y)
 			bCity = False
@@ -622,35 +622,35 @@ class RiseAndFall:
 	def placeGoodyHuts(self):
 			
 		if utils.getScenario() == i3000BC:
-			self.placeHut((101, 38), (107, 41)) # Southern China
-			self.placeHut((62, 45), (67, 50)) # Balkans
-			self.placeHut((69, 42), (76, 46)) # Asia Minor
+			self.placeHut((121, 43), (128, 46)) # Southern China
+			self.placeHut((71, 55), (79, 60)) # Balkans
+			self.placeHut((81, 51), (88, 56)) # Asia Minor
 		
 		if utils.getScenario() <= i600AD:
-			self.placeHut((49, 40), (54, 46)) # Iberia
-			self.placeHut((57, 51), (61, 56)) # Denmark / Northern Germany
-			self.placeHut((48, 55), (49, 58)) # Ireland
-			self.placeHut((50, 53), (54, 60)) # Britain
-			self.placeHut((57, 57), (65, 65)) # Scandinavia
-			self.placeHut((73, 53), (81, 58)) # Russia
-			self.placeHut((81, 43), (86, 47)) # Transoxania
-			self.placeHut((88, 30), (94, 36)) # Deccan
-			self.placeHut((110, 40), (113, 43)) # Shikoku
-			self.placeHut((114, 49), (116, 52)) # Hokkaido
-			self.placeHut((85, 53), (99, 59)) # Siberia
-			self.placeHut((103, 24), (109, 29)) # Indonesia
-			self.placeHut((68, 17), (72, 23)) # East Africa
-			self.placeHut((65, 10), (70, 16)) # South Africa
-			self.placeHut((22, 48), (29, 51)) # Great Lakes
-			self.placeHut((18, 44), (22, 52)) # Great Plains
-			self.placeHut((34, 25), (39, 29)) # Amazonas Delta
-			self.placeHut((33, 9), (37, 15)) # Parana Delta
-			self.placeHut((25, 36), (32, 39)) # Caribbean
+			self.placeHut((55, 48), (62, 54)) # Iberia
+			self.placeHut((64, 62), (69, 68)) # Denmark / Northern Germany
+			self.placeHut((53, 63), (55, 66)) # Ireland
+			self.placeHut((56, 62), (60, 70)) # Britain
+			self.placeHut((65, 69), (75, 77)) # Scandinavia
+			self.placeHut((84, 63), (96, 68)) # Russia
+			self.placeHut((94, 52), (103, 57)) # Transoxania
+			self.placeHut((103, 34), (111, 41)) # Deccan
+			self.placeHut((133, 49), (136, 51)) # Shikoku
+			self.placeHut((137, 60), (139, 62)) # Hokkaido
+			self.placeHut((102, 64), (119, 71)) # Siberia
+			self.placeHut((123, 25), (132, 32)) # Indonesia
+			self.placeHut((79, 20), (84, 27)) # East Africa
+			self.placeHut((74, 12), (81, 19)) # South Africa
+			self.placeHut((22, 57), (30, 60)) # Great Lakes
+			self.placeHut((15, 51), (21, 61)) # Great Plains
+			self.placeHut((37, 29), (45, 34)) # Amazonas Delta
+			self.placeHut((37, 11), (41, 17)) # Parana Delta
+			self.placeHut((25, 41), (37, 46)) # Caribbean
 		
-		self.placeHut((107, 19), (116, 22)) # Northern Australia
-		self.placeHut((114, 10), (118, 17)) # Western Australia
-		self.placeHut((120, 5), (123, 11)) # New Zealand
-		self.placeHut((59, 25), (67, 28)) # Central Africa
+		self.placeHut((128, 20), (139, 24)) # Northern Australia
+		self.placeHut((137, 9), (142, 17)) # Western Australia
+		self.placeHut((145, 5), (149, 12)) # New Zealand
+		self.placeHut((69, 29), (78, 34)) # Central Africa
 		
 	def adjustReligionFoundingDates(self):
 		lReligionFoundingYears = [-2000, 40, 500, 1521, 622, -1500, 80, -500, -400, -600]
@@ -677,7 +677,7 @@ class RiseAndFall:
 		
 		if iGameTurn == getTurnForYear(tBirth[iSpain])-1:
 			if utils.getScenario() == i600AD:
-				pMassilia = gc.getMap().plot(56, 46)
+				pMassilia = gc.getMap().plot(65, 55)
 				if pMassilia.isCity():
 					pMassilia.getPlotCity().setCulture(pMassilia.getPlotCity().getOwner(), 1, True)
 
@@ -717,10 +717,10 @@ class RiseAndFall:
 
 		#Leoreth: give Phoenicia a settler in Qart-Hadasht in 820BC
 		if not pCarthage.isHuman() and iGameTurn == getTurnForYear(-820) - (data.iSeed % 10):
-			utils.makeUnit(iSettler, iCarthage, (58, 39), 1)
-			utils.makeUnit(iArcher, iCarthage, (58, 39), 2)
-			utils.makeUnit(iWorker, iCarthage, (58, 39), 2)
-			utils.makeUnit(iAfricanWarElephant, iCarthage, (58, 39), 2)
+			utils.makeUnit(iSettler, iCarthage, (68, 48), 1)
+			utils.makeUnit(iArcher, iCarthage, (68, 48), 2)
+			utils.makeUnit(iWorker, iCarthage, (68, 48), 2)
+			utils.makeUnit(iAfricanWarElephant, iCarthage, (68, 48), 2)
 			
 		if iGameTurn == getTurnForYear(476):
 			if pItaly.isHuman() and pRome.isAlive():
@@ -751,7 +751,7 @@ class RiseAndFall:
 					self.giveColonists(iPlayer)
 					
 		if iGameTurn == getTurnForYear(710)-1:
-			x, y = 51, 37
+			x, y = 58, 44
 			if gc.getMap().plot(x,y).isCity():
 				marrakesh = gc.getMap().plot(x,y).getPlotCity()
 				marrakesh.setHasReligion(iIslam, True, False, False)
@@ -788,8 +788,8 @@ class RiseAndFall:
 						
 			utils.updateMinorTechs(iSeljuks, iBarbarian)
 
-			tSeljukAreaTL = (78, 37)
-			tSeljukAreaBR = (85, 46)
+			tSeljukAreaTL = (91, 43)
+			tSeljukAreaBR = (98, 54)
 			targetCityList = []
 			targetPlayerList = []
 			lCityPlotList = utils.squareSearch(tSeljukAreaTL, tSeljukAreaBR, utils.cityPlots, -1)
@@ -825,7 +825,7 @@ class RiseAndFall:
 				CyInterface().addMessage(CyGame().getActivePlayer(), True , iDuration, CyTranslator().getText("TXT_KEY_SELJUK_HORDES", ()), "", 1 , "", ColorTypes(iRed),0,0,False,False)
 
 		if iGameTurn == getTurnForYear(1070 + data.iSeed % 10 - 5): #Linkman226- Seljuks
-			lSpawnPlots = [(77,41), (74, 43), (72, 44), (74, 39)]
+			tSpawnPlots = ((90,47), (85, 46), (87, 50), (83, 52), (85, 53))
 			for tPlot in lSpawnPlots:
 				spawnPlot = utils.getFreePlot(tPlot)
 				utils.makeUnitAI(iGhulamWarrior, iSeljuks, spawnPlot, UnitAITypes.UNITAI_ATTACK_CITY, 3)
@@ -850,9 +850,9 @@ class RiseAndFall:
 				unit.kill(False, iBarbarian)
 		
 			if pSeljuks.isAlive() and utils.getHumanID() != iMongolia:
-				tPlot = utils.getFreePlot((84, 46))
-				targetAreaTL = (73, 38)
-				targetAreaBR = (85, 46)
+				tPlot = utils.getFreePlot((98, 55))
+				targetAreaTL = (84, 43)
+				targetAreaBR = (98, 55)
 				count = 0
 				lCityPlotList = utils.squareSearch(targetAreaTL, targetAreaBR, utils.cityPlots, -1)
 
@@ -877,7 +877,7 @@ class RiseAndFall:
 					CyInterface().addMessage(utils.getHumanID(), True, iDuration, CyTranslator().getText("TXT_KEY_MONGOL_HORDE", (gc.getPlayer(iSeljuks).getCivilizationAdjectiveKey(),)), "", 0, "", ColorTypes(iWhite), -1, -1, True, True)
 		if iGameTurn == getTurnForYear(1230 + data.iSeed % 10 + 3): #Linkman226- Mongol Conquerors for Seljuks
 			if pSeljuks.isAlive() and utils.getHumanID() != iMongolia:
-				tPlot = utils.getFreeNeighborPlot((83, 42))
+				tPlot = utils.getFreeNeighborPlot((96, 50))
 				utils.makeUnitAI(iKeshik, iMongolia, tPlot, UnitAITypes.UNITAI_ATTACK_CITY, 2)
 				utils.makeUnitAI(iHorseArcher, iMongolia, tPlot, UnitAITypes.UNITAI_ATTACK_CITY, 2)
 				utils.makeUnitAI(iTrebuchet, iMongolia, tPlot, UnitAITypes.UNITAI_ATTACK_CITY, 1)
@@ -906,7 +906,7 @@ class RiseAndFall:
 		if iGameTurn == getTurnForYear(600):
 			if utils.getScenario() == i600AD:  #late start condition
 				tTL, tBR = Areas.tBirthArea[iChina]
-				if utils.getHumanID() != iChina: tTL = (99, 39) # 4 tiles further north
+				if utils.getHumanID() != iChina: tTL = (118, 43) # 4 tiles further north
 				lPlots = utils.getPlotList(tTL, tBR)
 				iNumAICitiesConverted, iNumHumanCitiesToConvert = self.convertSurroundingCities(iChina, lPlots)
 				self.convertSurroundingPlotCulture(iChina, lPlots)
@@ -1126,7 +1126,7 @@ class RiseAndFall:
 			pMaya.setCivics(iCivicsEconomy, iRegulatedTrade)
 			pMaya.setCivics(iCivicsReligion, iClergy)
 			pMaya.setCivics(iCivicsTerritory, iNationhood)
-			gc.getMap().plot(28, 31).setFeatureType(-1, 0)
+			# gc.getMap().plot(28, 31).setFeatureType(-1, 0)
 
 	def checkPlayerTurn(self, iGameTurn, iPlayer):
 		return
@@ -1249,9 +1249,9 @@ class RiseAndFall:
 												CyTranslator().getText("TXT_KEY_STABILITY_SECESSION", ()), "", 0, "", ColorTypes(iOrange), -1, -1, True, True)
 						
 					return
-					
-			    
-				    
+
+
+
 	def initBirth(self, iCurrentTurn, iBirthYear, iCiv): # iBirthYear is really year now, so no conversion prior to function call - edead
 		print 'init birth in: '+str(iBirthYear)
 		iHuman = utils.getHumanID()
@@ -1344,8 +1344,8 @@ class RiseAndFall:
 				utils.setReborn(iKhmer, True)
 				
 				# Prey Nokor becomes Saigon
-				if gc.getMap().plot(104, 33).isCity():
-					gc.getMap().plot(104, 33).getPlotCity().setName("Saigon", False)
+				if gc.getMap().plot(123, 35).isCity():
+					gc.getMap().plot(123, 35).getPlotCity().setName("Saigon", False)
 				
 			iPreviousOwner = gc.getMap().plot(x, y).getOwner()
 				
@@ -1943,26 +1943,26 @@ class RiseAndFall:
 					
 				if not bAlreadyContacted:
 					if iNewWorldCiv == iMaya:
-						tContactZoneTL = (15, 30)
-						tContactZoneBR = (34, 42)
+						tContactZoneTL = (12, 35)
+						tContactZoneBR = (39, 49)
 					elif iNewWorldCiv == iAztecs:
-						tContactZoneTL = (11, 31)
-						tContactZoneBR = (34, 43)
+						tContactZoneTL = (9, 36)
+						tContactZoneBR = (38, 50)
 					elif iNewWorldCiv == iInca:
 						tContactZoneTL = (21, 11)
-						tContactZoneBR = (36, 40)
+						tContactZoneBR = (42, 46)
 						
 					data.lFirstContactConquerors[iIndex] = True
 					
 					# change some terrain to end isolation
 					if iNewWorldCiv == iInca:
-						gc.getMap().plot(27, 30).setFeatureType(-1, 0)
-						gc.getMap().plot(28, 31).setFeatureType(-1, 0)
-						gc.getMap().plot(31, 13).setPlotType(PlotTypes.PLOT_HILLS, True, True) 
-						gc.getMap().plot(32, 19).setPlotType(PlotTypes.PLOT_HILLS, True, True)
-						gc.getMap().plot(27, 29).setPlotType(PlotTypes.PLOT_HILLS, True, True) #Bogota
-					elif iNewWorldCiv == iAztecs:
-						gc.getMap().plot(40, 66).setPlotType(PlotTypes.PLOT_HILLS, True, True)
+						gc.getMap().plot(29, 34).setFeatureType(-1, 0) #Bogota
+						gc.getMap().plot(30, 35).setFeatureType(-1, 0)
+						gc.getMap().plot(31, 36).setFeatureType(-1, 0)
+						gc.getMap().plot(35, 23).setPlotType(PlotTypes.PLOT_HILLS, True, True) 
+						gc.getMap().plot(33, 12).setPlotType(PlotTypes.PLOT_HILLS, True, True)
+						gc.getMap().plot(32, 25).setPlotType(PlotTypes.PLOT_HILLS, True, True) 
+						gc.getMap().plot(28, 29).setPlotType(PlotTypes.PLOT_HILLS, True, True) 
 						
 					lContactPlots = []
 					lArrivalPlots = []
@@ -2095,7 +2095,7 @@ class RiseAndFall:
 		if utils.getHumanID() != iCiv:
 			if iCiv == iAmerica:
 				iCount = 0
-				lWestCoast = [(11, 50), (11, 49), (11, 48), (11, 47), (11, 46), (12, 45)]
+				lWestCoast = [(8, 59), (8, 58), (8, 57), (8, 56), (8, 55), (8, 54), (9, 53), (9, 52), (9, 51)]
 				lEnemyCivs = []
 				lFreePlots = []
 				for tPlot in lWestCoast:
@@ -2128,7 +2128,7 @@ class RiseAndFall:
 						
 			elif iCiv == iRussia:
 				lFreePlots = []
-				tVladivostok = (111, 51)
+				tVladivostok = (133, 60)
 				
 				x, y = tVladivostok
 				pPlot = gc.getMap().plot(x, y)
@@ -2499,7 +2499,7 @@ class RiseAndFall:
 				pCarthage.initUnit(iGalley, tSeaPlot[0], tSeaPlot[1], UnitAITypes.UNITAI_ASSAULT_SEA, DirectionTypes.DIRECTION_SOUTH)
 				pCarthage.initUnit(iWarGalley, tSeaPlot[0], tSeaPlot[1], UnitAITypes.UNITAI_ESCORT_SEA, DirectionTypes.DIRECTION_SOUTH)
 		elif iCiv == iPolynesia:
-			tSeaPlot = (4, 19)
+			tSeaPlot = (2, 21)
 			utils.makeUnit(iSettler, iCiv, tPlot, 1)
 			utils.makeUnit(iWaka, iCiv, tSeaPlot, 1)
 			utils.makeUnit(iSettler, iCiv, tSeaPlot, 1)
@@ -2978,9 +2978,9 @@ class RiseAndFall:
 			utils.makeUnit(iWorker, iCiv, tPlot, 3)
 			if utils.getHumanID() != iPoland:
 				iRand = gc.getGame().getSorenRandNum(5, 'Random city spot')
-				if iRand == 0: tCityPlot = (65, 55) # Memel
-				elif iRand == 1: tCityPlot = (65, 54) # Koenigsberg
-				else: tCityPlot = (64, 54) # Gdansk
+				if iRand == 0: tCityPlot = (74, 65) # Memel
+				elif iRand == 1: tCityPlot = (74, 65) # Koenigsberg
+				else: tCityPlot = (73, 65) # Gdansk
 				utils.makeUnit(iSettler, iCiv, tCityPlot, 1)
 				utils.makeUnit(iLongbowman, iCiv, tCityPlot, 1)
 		elif iCiv == iTurkey:
@@ -3061,10 +3061,10 @@ class RiseAndFall:
 				
 		# start AI settler and garrison in Denmark and Sweden
 		if utils.getHumanID() != iVikings:
-			utils.makeUnit(iSettler, iVikings, (60, 56), 1)
-			utils.makeUnit(iArcher, iVikings, (60, 56), 1)
-			utils.makeUnit(iSettler, iVikings, (63, 59), 1)
-			utils.makeUnit(iArcher, iVikings, (63, 59), 1)
+			utils.makeUnit(iSettler, iVikings, (68, 67), 1)
+			utils.makeUnit(iArcher, iVikings, (68, 67), 1)
+			utils.makeUnit(iSettler, iVikings, (73, 70), 1)
+			utils.makeUnit(iArcher, iVikings, (73, 70), 1)
 		else:
 			utils.makeUnit(iSettler, iVikings, tCapital, 1)
 			utils.makeUnit(iArcher, iVikings, tCapital, 2)
@@ -3099,8 +3099,8 @@ class RiseAndFall:
 		sta.onCivSpawn(iPlayer)
 
 	def arabianSpawn(self):
-		plotBaghdad = gc.getMap().plot(77,40)
-		plotCairo = gc.getMap().plot(69,35)
+		plotBaghdad = gc.getMap().plot(89,47)
+		plotCairo = gc.getMap().plot(80,43)
 		Baghdad = plotBaghdad.getPlotCity()
 		Cairo = plotCairo.getPlotCity()
 
@@ -3113,59 +3113,59 @@ class RiseAndFall:
 			if iRand == 0:
 				if utils.getHumanID() != iArabia:
 					Baghdad.setHasRealBuilding(iPalace, True)
-					utils.makeUnit(iCamelArcher, iArabia, (77,40), 3)
-					utils.makeUnit(iSwordsman, iArabia, (77,40), 2)
-				utils.makeUnit(iCamelArcher, iArabia, (77,40), 2)
-				utils.makeUnit(iSwordsman, iArabia, (77,40), 2)
+					utils.makeUnit(iCamelArcher, iArabia, (89, 47), 3)
+					utils.makeUnit(iSwordsman, iArabia, (89, 47), 2)
+				utils.makeUnit(iCamelArcher, iArabia, (89, 47), 2)
+				utils.makeUnit(iSwordsman, iArabia, (89, 47), 2)
 			else:
 				if utils.getHumanID() != iArabia:
 					Baghdad.setHasRealBuilding(iPalace, True)
-					utils.makeUnit(iCamelArcher, iArabia, (69,35), 3)
-					utils.makeUnit(iSwordsman, iArabia, (69,35), 2)
-				utils.makeUnit(iCamelArcher, iArabia, (69,35), 2)
-				utils.makeUnit(iSwordsman, iArabia, (69,35), 2)
+					utils.makeUnit(iCamelArcher, iArabia, (80, 43), 3)
+					utils.makeUnit(iSwordsman, iArabia, (80, 43), 2)
+				utils.makeUnit(iCamelArcher, iArabia, (80, 43), 2)
+				utils.makeUnit(iSwordsman, iArabia, (80, 43), 2)
 
-			utils.makeUnit(iSettler, iArabia, (77,40), 1)
-			utils.makeUnit(iSettler, iArabia, (69,35), 1)
-			utils.makeUnit(iWorker, iArabia, (77,40), 1)
-			utils.makeUnit(iWorker, iArabia, (69,35), 1)
+			utils.makeUnit(iSettler, iArabia, (89, 47), 1)
+			utils.makeUnit(iSettler, iArabia, (80, 43), 1)
+			utils.makeUnit(iWorker, iArabia, (89, 47), 1)
+			utils.makeUnit(iWorker, iArabia, (80, 43), 1)
 
 		elif bBaghdad and not bCairo:
 			if utils.getHumanID() != iArabia:
 				Baghdad.setHasRealBuilding(iPalace, True)
-				utils.makeUnit(iCamelArcher, iArabia, (77,40), 3)
-				utils.makeUnit(iSwordsman, iArabia, (77,40), 2)
-			utils.makeUnit(iSettler, iArabia, (77,40), 1)
-			utils.makeUnit(iCamelArcher, iArabia, (77,40), 2)
-			utils.makeUnit(iSwordsman, iArabia, (77,40), 2)#
+				utils.makeUnit(iCamelArcher, iArabia, (89, 47), 3)
+				utils.makeUnit(iSwordsman, iArabia, (89, 47), 2)
+			utils.makeUnit(iSettler, iArabia, (89, 47), 1)
+			utils.makeUnit(iCamelArcher, iArabia, (89, 47), 2)
+			utils.makeUnit(iSwordsman, iArabia, (89, 47), 2)#
 
-			utils.makeUnit(iSettler, iArabia, (77,40), 1)
-			utils.makeUnit(iWorker, iArabia, (77,40), 1)
-			utils.makeUnit(iWorker, iArabia, (75,33), 1)
+			utils.makeUnit(iSettler, iArabia, (89, 47), 1)
+			utils.makeUnit(iWorker, iArabia, (89, 47), 1)
+			utils.makeUnit(iWorker, iArabia, (86, 39), 1)
 
 		elif not bBaghdad and bCairo:
 			if utils.getHumanID() != iArabia:
-				utils.makeUnit(iCamelArcher, iArabia, (69,35), 3)
-				utils.makeUnit(iSwordsman, iArabia, (69,35), 2)
-			utils.makeUnit(iSettler, iArabia, (69,35), 1)
-			utils.makeUnit(iCamelArcher, iArabia, (69,35), 2)
-			utils.makeUnit(iSwordsman, iArabia, (69,35), 2)
+				utils.makeUnit(iCamelArcher, iArabia, (80, 43), 3)
+				utils.makeUnit(iSwordsman, iArabia, (80, 43), 2)
+			utils.makeUnit(iSettler, iArabia, (80, 43), 1)
+			utils.makeUnit(iCamelArcher, iArabia, (80, 43), 2)
+			utils.makeUnit(iSwordsman, iArabia, (80, 43), 2)
 
-			utils.makeUnit(iSettler, iArabia, (69,35), 1)
-			utils.makeUnit(iWorker, iArabia, (75,33), 1)
-			utils.makeUnit(iWorker, iArabia, (69,35), 1)
+			utils.makeUnit(iSettler, iArabia, (80, 43), 1)
+			utils.makeUnit(iWorker, iArabia, (86, 39), 1)
+			utils.makeUnit(iWorker, iArabia, (80, 43), 1)
 
 		else:
-			utils.makeUnit(iSettler, iArabia, (75,33), 2)
-			utils.makeUnit(iWorker, iArabia, (75,33), 2)
+			utils.makeUnit(iSettler, iArabia, (86, 39), 2)
+			utils.makeUnit(iWorker, iArabia, (86, 39), 2)
 			if utils.getHumanID() != iArabia:
-				utils.makeUnit(iCamelArcher, iArabia, (75,33), 3)
-				utils.makeUnit(iSwordsman, iArabia, (75,33), 2)
-			utils.makeUnit(iCamelArcher, iArabia, (75,33), 2)
-			utils.makeUnit(iSwordsman, iArabia, (75,33), 2)
+				utils.makeUnit(iCamelArcher, iArabia, (86, 39), 3)
+				utils.makeUnit(iSwordsman, iArabia, (86, 39), 2)
+			utils.makeUnit(iCamelArcher, iArabia, (86, 39), 2)
+			utils.makeUnit(iSwordsman, iArabia, (86, 39), 2)
 
 		if utils.getHumanID() != iArabia and bBaghdad:
-			utils.makeUnit(iSpearman, iArabia, (77, 40), 2)
+			utils.makeUnit(iSpearman, iArabia, (89, 47), 2)
 			
 	def germanSpawn(self):
 		if data.getStabilityLevel(iHolyRome) < iStabilityShaky: data.setStabilityLevel(iHolyRome, iStabilityShaky)
@@ -3176,7 +3176,7 @@ class RiseAndFall:
 		dc.adjectiveChange(iHolyRome)
 		
 	def holyRomanSpawn(self):
-		plot = gc.getMap().plot(60, 56)
+		plot = gc.getMap().plot(68, 67)
 		if plot.isCity(): plot.getPlotCity().setCulture(iVikings, 5, True)
 		
 				

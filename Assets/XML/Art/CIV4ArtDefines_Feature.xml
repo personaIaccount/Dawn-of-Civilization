@@ -675,6 +675,40 @@
 				<bGenerateRotations>0</bGenerateRotations>
 				<VarietyButton>Art/Interface/Buttons/TerrainFeatures/Button_Islands.dds</VarietyButton>
 			</FeatureVariety>
+			<!-- <FeatureVariety>
+				<FeatureArtPieces>
+					<FeatureArtPiece>
+						<ModelFile>Art/Terrain/Features/Islands_Tundra/island1_nw.nif</ModelFile>
+						<ModelFile>Art/Terrain/Features/Islands_Tundra/island2_nw.nif</ModelFile>
+						<ModelFile>Art/Terrain/Features/Islands_Tundra/island3_nw.nif</ModelFile>
+						<Connections>NW</Connections>
+					</FeatureArtPiece>
+					<FeatureArtPiece>
+						<ModelFile>Art/Terrain/Features/Islands_Tundra/island0.nif</ModelFile>
+						<ModelFile>Art/Terrain/Features/Islands_Tundra/island1_ne.nif</ModelFile>
+						<ModelFile>Art/Terrain/Features/Islands_Tundra/island2_ne.nif</ModelFile>
+						<ModelFile>Art/Terrain/Features/Islands_Tundra/island3_ne.nif</ModelFile>
+						<Connections>NE</Connections>
+					</FeatureArtPiece>
+					<FeatureArtPiece>
+						<ModelFile>Art/Terrain/Features/Islands_Tundra/island0.nif</ModelFile>
+						<ModelFile>Art/Terrain/Features/Islands_Tundra/island1_sw.nif</ModelFile>
+						<ModelFile>Art/Terrain/Features/Islands_Tundra/island2_sw.nif</ModelFile>
+						<ModelFile>Art/Terrain/Features/Islands_Tundra/island3_sw.nif</ModelFile>
+						<Connections>SW</Connections>
+					</FeatureArtPiece>
+					<FeatureArtPiece>
+						<ModelFile>Art/Terrain/Features/Islands_Tundra/island0.nif</ModelFile>
+						<ModelFile>Art/Terrain/Features/Islands_Tundra/island1_se.nif</ModelFile>
+						<ModelFile>Art/Terrain/Features/Islands_Tundra/island2_se.nif</ModelFile>
+						<ModelFile>Art/Terrain/Features/Islands_Tundra/island3_se.nif</ModelFile>
+						<Connections>SE</Connections>
+					</FeatureArtPiece>
+				</FeatureArtPieces>
+				<FeatureDummyNodes/>
+				<bGenerateRotations>0</bGenerateRotations>
+				<VarietyButton>Art/Interface/Buttons/TerrainFeatures/Button_Islands_Tundra.dds</VarietyButton>
+			</FeatureVariety> -->
 		</FeatureArtInfo>
 	</FeatureArtInfos>
 </Civ4ArtDefines>
