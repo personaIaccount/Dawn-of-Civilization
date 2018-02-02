@@ -16452,7 +16452,7 @@ BeginPlot
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	BeginUnit
-		UnitType=UNIT_ARQUEBUSIER, UnitOwner=29, (Portugal)
+		UnitType=UNIT_PORTUGAL_BANDEIRANTES, UnitOwner=29, (Portugal)
 	EndUnit
 	BeginCity
 		CityOwner=29, (Portugal)
@@ -16539,7 +16539,7 @@ BeginPlot
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	BeginUnit
-		UnitType=UNIT_ARQUEBUSIER, UnitOwner=29, (Portugal)
+		UnitType=UNIT_PORTUGAL_BANDEIRANTES, UnitOwner=29, (Portugal)
 	EndUnit
 	BeginCity
 		CityOwner=29, (Portugal)
@@ -17731,7 +17731,7 @@ BeginPlot
 		UnitType=UNIT_GALLEON, UnitOwner=29, (Portugal)
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_ARQUEBUSIER, UnitOwner=29, (Portugal)
+		UnitType=UNIT_PORTUGAL_BANDEIRANTES, UnitOwner=29, (Portugal)
 	EndUnit
 	BeginCity
 		CityOwner=29, (Portugal)
@@ -18196,7 +18196,7 @@ BeginPlot
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	BeginUnit
-		UnitType=UNIT_ARQUEBUSIER, UnitOwner=29, (Portugal)
+		UnitType=UNIT_PORTUGAL_BANDEIRANTES, UnitOwner=29, (Portugal)
 	EndUnit
 	BeginCity
 		CityOwner=29, (Portugal)
@@ -19127,7 +19127,7 @@ BeginPlot
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	BeginUnit
-		UnitType=UNIT_ARQUEBUSIER, UnitOwner=29, (Portugal)
+		UnitType=UNIT_PORTUGAL_BANDEIRANTES, UnitOwner=29, (Portugal)
 	EndUnit
 	BeginCity
 		CityOwner=29, (Portugal)
@@ -20316,7 +20316,7 @@ BeginPlot
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	BeginUnit
-		UnitType=UNIT_ARQUEBUSIER, UnitOwner=29, (Portugal)
+		UnitType=UNIT_PORTUGAL_BANDEIRANTES, UnitOwner=29, (Portugal)
 	EndUnit
 	BeginCity
 		CityOwner=29, (Portugal)
@@ -21193,22 +21193,22 @@ BeginPlot
 		UnitType=UNIT_GALLEON, UnitOwner=29, (Portugal)
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_ARQUEBUSIER, UnitOwner=29, (Portugal)
+		UnitType=UNIT_PORTUGAL_BANDEIRANTES, UnitOwner=29, (Portugal)
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_ARQUEBUSIER, UnitOwner=29, (Portugal)
+		UnitType=UNIT_PORTUGAL_BANDEIRANTES, UnitOwner=29, (Portugal)
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_ARQUEBUSIER, UnitOwner=29, (Portugal)
+		UnitType=UNIT_PORTUGAL_BANDEIRANTES, UnitOwner=29, (Portugal)
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_ARQUEBUSIER, UnitOwner=29, (Portugal)
+		UnitType=UNIT_PORTUGAL_BANDEIRANTES, UnitOwner=29, (Portugal)
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_ARQUEBUSIER, UnitOwner=29, (Portugal)
+		UnitType=UNIT_PORTUGAL_BANDEIRANTES, UnitOwner=29, (Portugal)
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_ARQUEBUSIER, UnitOwner=29, (Portugal)
+		UnitType=UNIT_PORTUGAL_BANDEIRANTES, UnitOwner=29, (Portugal)
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_BOMBARD, UnitOwner=29, (Portugal)
@@ -26107,7 +26107,7 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	BeginUnit
-		UnitType=UNIT_ARQUEBUSIER, UnitOwner=29, (Portugal)
+		UnitType=UNIT_PORTUGAL_BANDEIRANTES, UnitOwner=29, (Portugal)
 	EndUnit
 	BeginCity
 		CityOwner=29, (Portugal)
@@ -27749,10 +27749,10 @@ BeginPlot
 		UnitType=UNIT_CONGOLESE_POMBOS, UnitOwner=37, (Congo)
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_LONGBOWMAN, UnitOwner=37, (Congo)
+		UnitType=UNIT_CONGO_NGOLO, UnitOwner=37, (Congo)
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_LONGBOWMAN, UnitOwner=37, (Congo)
+		UnitType=UNIT_CONGO_NGOLO, UnitOwner=37, (Congo)
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_CATAPULT, UnitOwner=37, (Congo)
@@ -29739,10 +29739,10 @@ BeginPlot
 		UnitType=UNIT_ARQUEBUSIER, UnitOwner=28, (Poland)
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_BOMBARD, UnitOwner=28, (Poland)
+		UnitType=UNIT_POLAND_TABOR, UnitOwner=28, (Poland)
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_BOMBARD, UnitOwner=28, (Poland)
+		UnitType=UNIT_POLAND_TABOR, UnitOwner=28, (Poland)
 	EndUnit
 	BeginCity
 		CityOwner=28, (Poland)
@@ -31357,19 +31357,19 @@ BeginPlot
 		UnitType=UNIT_OTTOMAN_JANISSARY, UnitOwner=35, (Turkey)
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_BOMBARD, UnitOwner=35, (Turkey)
+		UnitType=UNIT_TURKEY_GREAT_BOMBARD, UnitOwner=35, (Turkey)
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_BOMBARD, UnitOwner=35, (Turkey)
+		UnitType=UNIT_TURKEY_GREAT_BOMBARD, UnitOwner=35, (Turkey)
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_BOMBARD, UnitOwner=35, (Turkey)
+		UnitType=UNIT_TURKEY_GREAT_BOMBARD, UnitOwner=35, (Turkey)
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_BOMBARD, UnitOwner=35, (Turkey)
+		UnitType=UNIT_TURKEY_GREAT_BOMBARD, UnitOwner=35, (Turkey)
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_BOMBARD, UnitOwner=35, (Turkey)
+		UnitType=UNIT_TURKEY_GREAT_BOMBARD, UnitOwner=35, (Turkey)
 	EndUnit
 	BeginCity
 		CityOwner=35, (Turkey)
@@ -32692,7 +32692,7 @@ BeginPlot
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	BeginUnit
-		UnitType=UNIT_ARQUEBUSIER, UnitOwner=29, (Portugal)
+		UnitType=UNIT_PORTUGAL_BANDEIRANTES, UnitOwner=29, (Portugal)
 	EndUnit
 	BeginCity
 		CityOwner=29, (Portugal)
